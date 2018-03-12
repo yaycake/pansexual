@@ -65,7 +65,7 @@ ul>li{
 }
 
 .logo {
-  width: 2.5rem;
+  width: 3rem;
   height: auto;
 }
 
@@ -157,6 +157,22 @@ ul>li{
   height: 200px;
 }
 
+
+/*- - - - - - - - - - - - - FOOTER*/
+
+.footer {
+  background-color: black;
+  height: 7rem;
+  width: 100vw;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: .75rem;
+  margin-top: 4rem;
+}
+
 /*- - - - - - - - - - - - - - CARDS REFER TO TEXT + BUTTON BOXES*/
 
 /*- - - - - - - - CARD ITSELF*/
@@ -221,20 +237,6 @@ ul>li{
   padding-right: 6rem;
 }
 
-/*- - - - - - - - - - - - - FOOTER*/
-
-.footer {
-  background-color: black;
-  height: 7rem;
-  width: 100vw;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  font-size: .75rem;
-  margin-top: 4rem;
-}
 
 /*- - - - - - - - - - - - - - - - BUTTON*/
 
@@ -285,6 +287,11 @@ ul>li{
 
 .paypal, .bitcoin {
   width: 150px
+}
+
+.bitcoin-qr{
+  width: 5rem;
+  height: auto;
 }
 
 .contactme {
