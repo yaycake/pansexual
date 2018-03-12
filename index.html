@@ -22,12 +22,33 @@
   <body>
 <!-- - - - - - - - - - - - - NAVIGATION BAR -->
   <div class="navbar">
-    <ul class="navbar-left">
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-      <li>By Yaycake</li>
-      <li><a href="#">Download</a></li>
-      <li><a href="#">Donate</a></li>
+    <ul class="navbar-right">
+      <li>
+        <img class="icons-nav logo" src="https://github.com/yaycake/pansexual/blob/master/Images/icon_pan.png?raw=true">
+
+      </li>
+      <li> The Pansexual Erotica Coloring Book</li>
+      <li>by yaycake</li>
+    </ul>
+    <ul class="navbar-right">
+      <li>
+        <a href="#about">
+          <img class="icons-nav" src="https://github.com/yaycake/pansexual/blob/master/Images/icon_about.png?raw=true">
+          About
+        </a>
+      </li>
+      <li>
+        <a href="#download">
+          <img class="icons-nav" src="https://github.com/yaycake/pansexual/blob/master/Images/icon_download.png?raw=true">
+          Download
+        </a>
+      </li>
+      <li>
+        <a href="#donate">
+          <img class="icons-nav" src="https://github.com/yaycake/pansexual/blob/master/Images/icon_donate.png?raw=true">
+          Donate
+        </a>
+      </li>
     </ul>
   </div>
 
@@ -38,7 +59,7 @@
     </div>
 
 <!-- - - - - - - - - - - - - - SECTION::ABOUT -->
-    <div class="section about">
+    <div class="section about" id="about">
 
       <div class="section-pic about-pic"></div>
 
@@ -52,7 +73,7 @@
       </div>
     </div>
 <!-- - - - - - - - - - - - - - - - - SECTION::DOWNLOAD -->
-    <div class="section download">
+    <div class="section download" id="download">
 
       <div class="download-card text-card">
          <div class="card-title">
@@ -62,7 +83,8 @@
         <p class="download-text card-text"> Want a copy? It's free. Download the PDF to print for yourself (and for your friends, and your friends' friends...). Please consider donating any amount of cash, change, credit, or cryptocurrency to Planned Parenthood, and if that's not your thing-- directly to the artist herself. </p>
 
         <span class="download-button button">
-          <p>Download The PDF</p>
+          <a href="paneroticacoloringbook.zip" download="paneroticacoloringbook">
+          <p>Download The PDF</p></a>
         </span>
       </div>
 
@@ -72,7 +94,7 @@
 
 
 <!-- - - - - - - - - - - - - - - - - - SECTION::DONATE -->
-    <div class="section donate">
+    <div class="section donate" id="donate">
       <div class="section-pic donate-pic"></div>
 
       <div class="donate-card text-card">
@@ -83,7 +105,7 @@
         <p class="donate-text card-text">If you'd like to show support, please donate an fair amount to <a href="http://www.plannedparenthood.org"> Planned Parenthood</a>. </p>
 
         <span class="button donate-button">
-          <p>I'll Donate</p>
+          <a href="https://secure.ppaction.org/site/Donation2?df_id=25409&25409.donation=form1"><p>I'll Donate</p></a>
         </span>
 
         <p class="donate-text card-text">If you do not endorse Planned Parenthood, consider donating to the artist directly.</p>
@@ -94,6 +116,7 @@
         </span>
         <span class="button bitcoin">
             <p>Pay With BitCoin</p>
+            <img class="bitcoin-qr" src="https://github.com/yaycake/pansexual/blob/master/Images/bitcoinwallet.jpg?raw=true">
           </span>
         </div>
 
