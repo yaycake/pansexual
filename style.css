@@ -5,6 +5,7 @@ body {
   font-family: Helvetica;
   background: linear-gradient(to bottom, rgba(255,255,255,0.92) 16%,rgba(255,255,255,0.83) 59%,rgba(255,255,255,0.79) 80%,rgba(255,255,255,0.68) 100%), url('https://github.com/yaycake/pansexual/blob/master/Images/makingout.png?raw=true');
   background-attachment: fixed;
+
 }
 
 h1 {
@@ -17,48 +18,67 @@ h3{
 }
 
 
-ul li{
+ul>li{
    display: inline;
-   text-decoration: none;
+   /*text-decoration: none;*/
    padding: 10px 20px;
+  color: black;
+  font-size: .7rem;
+  letter-spacing: .25rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
+
 
 /*- - - - - - - - - - - - - CLASSES*/
 
 
 .navbar{
-  padding: .5rem;
+  padding: 30px 0px;
   list-style: none;
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
-  justify-content: center;
-  background-color: rgba(255, 255, 255, .2);
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, .8);
   text-shadow: 2px 2px 5px rgba(5,5,5,.09);
   position: fixed;
   height: 30px;
   width: 100%;
   margin: 0 auto;
-   color: black;
+  color: black;
 }
 
 .navbar>ul>li>a{
   text-decoration: none;
-   color: black;
-  font-size: 1rem;
+  color: black;
+  font-size: .7rem;
+  letter-spacing: .25rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
+.icons-nav{
+  width: 20px;
+  height: auto;
+}
 
-/*
-.navbar-left{
-  text-align: left;
+.logo {
+  width: 2.5rem;
+  height: auto;
+}
+
+.navbar-left, .navbar-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .navbar-right{
-  text-align: right;
-}*/
+  margin-right: 2.5rem;
+}
 
 /*- - - - - - - - - - BANNER*/
 .banner {
@@ -113,6 +133,8 @@ ul li{
   min-width: 300px;
   border-radius: 3px;
   margin-bottom: 30px;
+  /*border-bottom: 2px solid rgba(222,255,147,1);*/
+  border-right: 5px solid rgba(222,255,147,1);
 }
 
 /*- - - - - - - - - - SECTION PICTURES ARE BKGRND PIX*/
@@ -121,6 +143,8 @@ ul li{
 }
 
 .download-pic{
+  border-right: none;
+  border-left: 5px solid rgba(222,255,147,1);
   background-image: url('https://github.com/yaycake/pansexual/blob/master/Images/choke.jpg?raw=true');
 }
 
@@ -228,6 +252,14 @@ ul li{
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 5px solid rgba(222,255,147,1);
+  border-right: 5px solid rgba(222,255,147,1);
+}
+
+.button>a{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .download-button{
