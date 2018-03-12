@@ -117,15 +117,15 @@ ul li{
 
 /*- - - - - - - - - - SECTION PICTURES ARE BKGRND PIX*/
 .about-pic {
-  background-image: url('images/horse.jpg');
+  background-image: url('https://github.com/yaycake/pansexual/blob/master/Images/horse.jpg?raw=true');
 }
 
 .download-pic{
-  background-image: url('images/choke.jpg');
+  background-image: url('https://github.com/yaycake/pansexual/blob/master/Images/choke.jpg?raw=true');
 }
 
 .donate-pic{
-  background-image: url('images/vag.jpg');
+  background-image: url('https://github.com/yaycake/pansexual/blob/master/Images/vag.jpg?raw=true');
   background-size: cover;
 }
 
@@ -209,6 +209,7 @@ ul li{
   justify-content: space-around;
   text-align: center;
   font-size: .75rem;
+  margin-top: 4rem;
 }
 
 /*- - - - - - - - - - - - - - - - BUTTON*/
