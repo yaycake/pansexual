@@ -85,7 +85,7 @@ ul li{
 
 .section {
   height: 60vh;
-  padding: 50px;
+  padding: 50px 0px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -129,7 +129,9 @@ ul li{
   background-size: cover;
 }
 
-
+.instagram-gallery{
+  height: 200px;
+}
 
 /*- - - - - - - - - - - - - - CARDS REFER TO TEXT + BUTTON BOXES*/
 
@@ -195,7 +197,19 @@ ul li{
   padding-right: 6rem;
 }
 
+/*- - - - - - - - - - - - - FOOTER*/
 
+.footer {
+  background-color: black;
+  height: 7rem;
+  width: 100vw;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  font-size: .75rem;
+}
 
 /*- - - - - - - - - - - - - - - - BUTTON*/
 
@@ -241,7 +255,7 @@ ul li{
 }
 
 .contactme {
-
+  width: 200px;
 }
 
 /*- -- - - - - - - - - - ICONS*/
