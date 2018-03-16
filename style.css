@@ -18,11 +18,10 @@ h3{
 }
 
 ul>li{
-   display: inline;
-   /*text-decoration: none;*/
-   padding: 10px 20px;
+  display: inline;
+  padding: 10px 20px;
   color: black;
-  font-size: .7rem;
+  font-size: 1rem;
   letter-spacing: .25rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -31,6 +30,11 @@ ul>li{
 .container{
   padding: 0;
 }
+
+.responsiverow{
+  display:flex;
+  justify-content: space-around;
+}
 /*- - - - - - - - - - - - - CLASSES*/
 
 
@@ -38,25 +42,22 @@ ul>li{
   padding: 20px 0px;
   padding-top: 30px;
   list-style: none;
-  display: flex;
-  flex-direction: row;
   text-align: center;
-  align-items: center;
-  /*justify-content: space-between;*/
-  background-color: rgba(255, 255, 255, .8);
+  /*background-color: rgba(255, 255, 255, .8);*/
   text-shadow: 2px 2px 5px rgba(5,5,5,.09);
-  position: fixed;
+  position: fixed!important;
   height: 100%;
   max-height: 100px;
   width: 100%;
   margin: 0 auto;
   color: black;
+  z-index: 99;
 }
 
 li>a{
   text-decoration: none;
   color: black;
-  font-size: .7rem;
+  font-size: 1rem;
   letter-spacing: .25rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -76,16 +77,11 @@ li>a{
   display: flex;
   flex-direction: row;
   align-items: center;
-  /*justify-content: space-around;*/
-  /*padding-top: 1.5 rem;*/
 }
 
-.navbar-right{
-/*  margin-right: 2.5rem;
-  padding-bottom: 1.5rem;*/
+/*.navbar-right{
   float: none !important;
-
-}
+}*/
 
 /*- - - - - - - - - - BANNER*/
 .banner {
@@ -100,9 +96,6 @@ li>a{
   text-align: center;
 }
 
-/*.banner::before {
-  opacity: .2;
-}*/
 .banner>h1{
   padding: 30px;
 }
@@ -132,13 +125,11 @@ li>a{
 /*- - - - - - - - - - - - PIX*/
 
 .section-pic {
-  height: 400px;
-  width: 400px;
+  height: 32rem;
+  width: 32rem;
   background-position: center;
   background-size: cover;
-  min-width: 300px;
   border-radius: 3px;
-  /*margin-bottom: 30px;*/
   border-right: 5px solid rgba(222,255,147,1);
   margin: 0 auto;
 }
@@ -196,12 +187,10 @@ li>a{
 
 .about-card, .donate-card {
   text-align: left;
-  /*border-left: 4px solid rgba(222,255,147,0.49);*/
 }
 
 .download-card {
   text-align: right;
-  /*border-right: 4px solid rgba(222,255,147,0.49);*/
 }
 
 /*- - - - - - - - - CARD TITLE*/
@@ -235,8 +224,6 @@ li>a{
 
 
 .download-text{
-  /*padding-right: 0px !important;*/
-  /*padding-left: 6rem;*/
   text-align: right;
 }
 
