@@ -17,7 +17,6 @@ h3{
   font-size: 2rem;
 }
 
-
 ul>li{
    display: inline;
    /*text-decoration: none;*/
@@ -29,28 +28,32 @@ ul>li{
   text-transform: uppercase;
 }
 
-
+.container{
+  padding: 0;
+}
 /*- - - - - - - - - - - - - CLASSES*/
 
 
 .navbar{
-  padding: 30px 0px;
+  padding: 20px 0px;
+  padding-top: 30px;
   list-style: none;
   display: flex;
   flex-direction: row;
   text-align: center;
   align-items: center;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   background-color: rgba(255, 255, 255, .8);
   text-shadow: 2px 2px 5px rgba(5,5,5,.09);
   position: fixed;
-  height: 30px;
+  height: 100%;
+  max-height: 100px;
   width: 100%;
   margin: 0 auto;
   color: black;
 }
 
-.navbar>ul>li>a{
+li>a{
   text-decoration: none;
   color: black;
   font-size: .7rem;
@@ -73,18 +76,21 @@ ul>li{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  /*justify-content: space-around;*/
+  /*padding-top: 1.5 rem;*/
 }
 
 .navbar-right{
-  margin-right: 2.5rem;
+/*  margin-right: 2.5rem;
+  padding-bottom: 1.5rem;*/
+  float: none !important;
+
 }
 
 /*- - - - - - - - - - BANNER*/
 .banner {
   height: 100vh;
   width: 100%;
-  /*background-image: url('images/makingout.png');*/
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -104,9 +110,9 @@ ul>li{
 /*- - - - - - - - - - - SECTIONS*/
 
 .section {
-  height: 60vh;
+  /*height: 60vh;*/
   padding: 50px 0px;
-  width: 100%;
+  /*width: 100%;*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -132,9 +138,9 @@ ul>li{
   background-size: cover;
   min-width: 300px;
   border-radius: 3px;
-  margin-bottom: 30px;
-  /*border-bottom: 2px solid rgba(222,255,147,1);*/
+  /*margin-bottom: 30px;*/
   border-right: 5px solid rgba(222,255,147,1);
+  margin: 0 auto;
 }
 
 /*- - - - - - - - - - SECTION PICTURES ARE BKGRND PIX*/
@@ -184,6 +190,7 @@ ul>li{
   flex-direction: column;
   padding: 1.75rem;
   background: rgba(255,255,255,.2);
+  margin: 0 auto;
 }
 
 
@@ -229,12 +236,13 @@ ul>li{
 
 .download-text{
   /*padding-right: 0px !important;*/
-  padding-left: 6rem;
+  /*padding-left: 6rem;*/
+  text-align: right;
 }
 
 
 .about-text, .donate-text{
-  padding-right: 6rem;
+  /*padding-right: 6rem;*/
 }
 
 
@@ -304,6 +312,9 @@ ul>li{
   height: 30px;
   margin: 30px;
 }
+
+
+
 /*- - - - - - - - - - - - - - - ALL THESE DEVICES WOMAN*/
 /*@media only screen and (max-width: 964px) body {
     -webkit-flex-direction: column;
