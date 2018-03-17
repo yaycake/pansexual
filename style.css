@@ -5,16 +5,22 @@ body {
   font-family: Helvetica;
   background: linear-gradient(to bottom, rgba(255,255,255,0.92) 16%,rgba(255,255,255,0.83) 59%,rgba(255,255,255,0.79) 80%,rgba(255,255,255,0.68) 100%), url('https://github.com/yaycake/pansexual/blob/master/Images/makingout.png?raw=true');
   background-attachment: fixed;
-
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 12.5rem!important;
   font-family: Helvetica;
 }
 
 h3{
   font-size: 2rem;
+}
+
+p{
+  font-size:16px;
 }
 
 ul>li{
@@ -39,28 +45,34 @@ ul>li{
 
 
 .navbar{
-  padding: 20px 0px;
-  padding-top: 30px;
+  padding: 1.5rem;
+/*  padding-top: 30px;*/
   list-style: none;
   text-align: center;
-  /*background-color: rgba(255, 255, 255, .8);*/
+  background-color: rgba(255, 255, 255, .8);
   text-shadow: 2px 2px 5px rgba(5,5,5,.09);
   position: fixed!important;
-  height: 100%;
-  max-height: 100px;
+  /*height: 100%;*/
+  min-height: 4rem;
+  max-height: 12.5rem;
   width: 100%;
   margin: 0 auto;
   color: black;
   z-index: 99;
+  /*clear: all;*/
 }
 
-li>a{
+span>a, .navbar-left{
   text-decoration: none;
   color: black;
   font-size: 1rem;
   letter-spacing: .25rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.top-links{
+  padding: 1rem;
 }
 
 .icons-nav{
@@ -71,39 +83,41 @@ li>a{
 .logo {
   width: 3rem;
   height: auto;
+  /*padding: 2rem;*/
+  margin: 1rem 2rem;
 }
 
 .navbar-left, .navbar-right {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
-/*.navbar-right{
-  float: none !important;
-}*/
+.navbar-right{
+  margin-right: 2rem!important;
+}
 
 /*- - - - - - - - - - BANNER*/
 .banner {
   height: 100vh;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 4rem;
 }
 
 .banner>h1{
-  padding: 30px;
+  margin: 0 auto;
 }
 
 /*- - - - - - - - - - - SECTIONS*/
 
 .section {
   /*height: 60vh;*/
+  margin: 5rem;
   padding: 50px 0px;
   /*width: 100%;*/
   display: flex;
@@ -125,8 +139,10 @@ li>a{
 /*- - - - - - - - - - - - PIX*/
 
 .section-pic {
-  height: 32rem;
-  width: 32rem;
+  min-height: 32rem;
+  min-width: 32rem;
+  max-height: 40rem;
+  max-width: 40rem;
   background-position: center;
   background-size: cover;
   border-radius: 3px;
@@ -159,15 +175,11 @@ li>a{
 
 .footer {
   background-color: black;
-  height: 7rem;
-  width: 100vw;
+  height: 3rem;
+  width: 100%
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
+  /*text-align: center;*/
   font-size: .75rem;
-  margin-top: 4rem;
 }
 
 /*- - - - - - - - - - - - - - CARDS REFER TO TEXT + BUTTON BOXES*/
@@ -175,7 +187,7 @@ li>a{
 /*- - - - - - - - CARD ITSELF*/
 .text-card {
   height: 100%;
-  width: 27.5rem;
+  width: 45rem;
   min-width: 300px;
   display: flex;
   flex-direction: column;
@@ -187,10 +199,12 @@ li>a{
 
 .about-card, .donate-card {
   text-align: left;
+  margin-left: 20px;
 }
 
 .download-card {
   text-align: right;
+  margin-right: 20px;
 }
 
 /*- - - - - - - - - CARD TITLE*/
@@ -218,7 +232,9 @@ li>a{
 .card-text{
   line-height: 1.5rem;
   margin-bottom: 1rem;
-  font-size: 1rem;
+  line-height:2rem;
+  /*font-size: 1rem;*/
+  /*font-size: 16px;*/
   /*padding-right: 6rem;*/
 }
 
@@ -239,7 +255,7 @@ li>a{
   /*background-color: rgba(222,255,147,1);*/
   background-color:black;
   color: white;
-  width: 100px;
+  width: 200px;
   height: 40px;
   width: 200px;
   border-radius: 2px;
