@@ -23,16 +23,6 @@ p{
   font-size:16px;
 }
 
-ul>li{
-  display: inline;
-  padding: 10px 20px;
-  color: black;
-  font-size: 1rem;
-  letter-spacing: .25rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 .container{
   padding: 0;
 }
@@ -46,20 +36,17 @@ ul>li{
 
 .navbar{
   padding: 1.5rem;
-/*  padding-top: 30px;*/
   list-style: none;
   text-align: center;
   background-color: rgba(255, 255, 255, .8);
   text-shadow: 2px 2px 5px rgba(5,5,5,.09);
   position: fixed!important;
-  /*height: 100%;*/
   min-height: 4rem;
   max-height: 12.5rem;
   width: 100%;
   margin: 0 auto;
   color: black;
   z-index: 99;
-  /*clear: all;*/
 }
 
 span>a, .navbar-left{
@@ -71,8 +58,15 @@ span>a, .navbar-left{
   text-transform: uppercase;
 }
 
+
 .top-links{
   padding: 1rem;
+  margin: 1rem;
+}
+
+.top-links>a:hover{
+  border-bottom: 5px solid rgba(222,255,147,1);
+  text-decoration: none;
 }
 
 .icons-nav{
@@ -93,6 +87,16 @@ span>a, .navbar-left{
   align-items: center;
   justify-content: center;
 }
+
+.navbar-left{
+  font-weight: bolder;
+}
+
+#page-title:hover{
+  color: rgba(222,255,147,1);
+}
+
+
 
 .navbar-right{
   margin-right: 2rem!important;
@@ -116,10 +120,8 @@ span>a, .navbar-left{
 /*- - - - - - - - - - - SECTIONS*/
 
 .section {
-  /*height: 60vh;*/
   margin: 5rem;
   padding: 50px 0px;
-  /*width: 100%;*/
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -174,12 +176,23 @@ span>a, .navbar-left{
 /*- - - - - - - - - - - - - FOOTER*/
 
 .footer {
-  background-color: black;
-  height: 3rem;
-  width: 100%
-  color: white;
-  /*text-align: center;*/
   font-size: .75rem;
+  color: black;
+  font-size: 1rem;
+  /*letter-spacing: .25rem;*/
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer-links{
+  text-decoration: none;
+  color: black;
+}
+
+.footer-links:hover{
+  border-bottom: 5px solid rgba(222,255,147,1);
+  text-decoration: none;
 }
 
 /*- - - - - - - - - - - - - - CARDS REFER TO TEXT + BUTTON BOXES*/
@@ -192,7 +205,7 @@ span>a, .navbar-left{
   display: flex;
   flex-direction: column;
   padding: 1.75rem;
-  background: rgba(255,255,255,.2);
+  /*background: rgba(255,255,255,.2);*/
   margin: 0 auto;
 }
 
@@ -236,16 +249,9 @@ span>a, .navbar-left{
   /*padding-right: 6rem;*/
 }
 
-
 .download-text{
   text-align: right;
 }
-
-
-.about-text, .donate-text{
-  /*padding-right: 6rem;*/
-}
-
 
 /*- - - - - - - - - - - - - - - - BUTTON*/
 
@@ -263,6 +269,9 @@ span>a, .navbar-left{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
   border-bottom: 5px solid rgba(222,255,147,1);
   border-right: 5px solid rgba(222,255,147,1);
 }
@@ -282,30 +291,23 @@ span>a, .navbar-left{
   margin: 1px;
 }
 
-.payment-button{
-  width: 100%
-  height: auto;
-}
-
-.payment-buttons{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 10px
-}
-
-.paypal, .bitcoin {
-  width: 150px
-}
-
 .bitcoin-qr{
-  width: 5rem;
+  width: 16rem;
   height: auto;
+  margin: 1rem;
 }
 
 .contactme {
   width: 200px;
 }
+
+.payment-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
 
 /*- -- - - - - - - - - - ICONS*/
 .icons {
