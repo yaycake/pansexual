@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
     <!-- - - - - - - - - - - metatags -->
 
     <meta property="og:title" content="Love You Dan" />
@@ -26,11 +28,11 @@
 <!-- - - - - - - - - - - - - NAVIGATION BAR -->
 
     <div class="navbar">
-      <div class="row">
+      <div class="row" style="display:flex; align-items: center;">
         <div class="col-12 col-md-8">
           <div class="navbar-left">
             <img class="icons-nav logo" src="https://github.com/yaycake/pansexual/blob/master/Images/icon_pan.png?raw=true">
-            <h5>The Pansexual Erotica Coloring Book</h5>
+            <h5 id="page-title">The Pansexual Erotica Coloring Book</h5>
           </div>
         </div>
         <div class="col-12 col-md-4">
@@ -78,7 +80,7 @@
             <div class="col-sm-12 col-md-6">
               <div class="about-card text-card">
                 <div class="card-title">
-                  <h3>About</h3>
+                  <h2>About</h2>
                   <img class="icons" src="https://github.com/yaycake/pansexual/blob/master/Images/icon_about.png?raw=true">
                 </div>
                  <div class="about-text card-text"> The coloring book aims to celebrate sexual expression, positivity, and promote public discussion and concern with sexual health.
@@ -105,15 +107,17 @@
             <div class="col-sm-12 col-md-pull-7 offset-md-pull-3 col-md-6 offset-md-3">
               <div class="download-card text-card">
                 <div class="card-title">
-                  <h3>Download</h3>
+                  <h2>Download</h2>
                   <img class="icons" src="https://github.com/yaycake/pansexual/blob/master/Images/icon_download.png?raw=true">
                 </div>
                 <div class="download-text card-text"> Want a copy? It's free. Download the PDF to print for yourself (and for your friends, and your friends' friends...). Please consider donating any amount of cash, change, credit, or cryptocurrency to Planned Parenthood, and if that's not your thing-- directly to the artist herself. </div>
 
-                <div class="download-button button">
-                  <a href="https://github.com/yaycake/pansexual/raw/master/paneroticacoloringbook.pdf" download="paneroticacoloringbook">
-                  <p>Download The PDF</p></a>
-                </div>
+
+                <a href="https://github.com/yaycake/pansexual/raw/master/paneroticacoloringbook.pdf" download="paneroticacoloringbook">
+                  <div class="download-button button">
+                    Download The PDF
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -134,26 +138,38 @@
             <div class="col-sm-12 col-md-6">
               <div class="donate-card text-card">
                 <div class="card-title">
-                  <h3>Donate</h3>
+                  <h2>Donate</h2>
                   <img class="icons" src="https://github.com/yaycake/pansexual/blob/master/Images/icon_donate.png?raw=true">
                 </div>
-                <div class="donate-text card-text">If you'd like to show support, please donate an fair amount to <a href="http://www.plannedparenthood.org"> Planned Parenthood</a>. </div>
-
-                <div class="button donate-button">
-                  <a href="https://secure.ppaction.org/site/Donation2?df_id=25409&25409.donation=form1"><p>I'll Donate</p></a>
+                <div class="donate-text card-text">
+                  If you'd like to show support, please donate an fair amount to <a class="body-link" href="http://www.plannedparenthood.org"> Planned Parenthood.</a>
                 </div>
 
-                <div class="donate-text card-text">If you do not endorse Planned Parenthood, consider donating to the artist directly.</div>
+                <a href="https://secure.ppaction.org/site/Donation2?df_id=25409&25409.donation=form1">
+                  <div class="button donate-button">
+                    I'll Donate
+                  </div>
+                </a>
+
+                <div class="donate-text card-text">
+                  If you do not endorse Planned Parenthood, consider donating to the artist directly.
+                </div>
 
                 <div class="payment-buttons">
-                  <div class="button paypal">
-                    <p>Use PayPal</p>
-                  </div>
-                  <div class="button bitcoin">
-                    <p>Pay With BitCoin</p>
-                    <img class="bitcoin-qr" src="https://github.com/yaycake/pansexual/blob/master/images/bitcoinwallet.jpg?raw=true">
-                  </div>
+
+                  <span class="qrcode button">
+                      My Bitcoin Wallet
+                  </span>
+
+                  <a href="#">
+                    <div class="button stripe">
+                      Cash/Credit Card
+                    </div>
+                  </a>
                 </div>
+
+                 <img class="bitcoin-qr" src="https://github.com/yaycake/pansexual/blob/master/images/bitcoinwallet.jpg?raw=true">
+
               </div>
             </div>
           </div>
@@ -164,29 +180,24 @@
 
 
   <!-- - - - - - - - - - - - - - - - - - FOOTER -->
-    <!-- <div class="section footer"> -->
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-4">
-              <span id="contactme">
-                <p>#pansexualerotica</p>
-              </span>
-            </div>
-
-            <div class="col-sm-12 col-md-4">
-              <span id="ig">
-                <p>Pansexualeroticacoloringbook@gmail.com</p>
-              </span>
-            </div>
-
-            <div class="col-sm-12 col-md-4">
-              <span id="copyright">
-                <p>Copyright © 2018. All rights reserved.</p>
-              </span>
-            </div>
-          </div>
+]
+    <div class="footer container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+            #pansexualerotica
         </div>
-    <!-- </div> -->
+        <div class="col-sm-12 col-md-4">
+            <a class="footer-links" href="mailto:pansexualeroticacoloringbook@gmail.com">
+              Pansexualeroticacoloringbook@gmail.com
+            </a>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            Copyright © 2018. All rights reserved.
+        </div>
+      </div>
+      </br>
+      </br>
+    </div>
 
 
   <!-- - - - - - - - - - - - - - - - - - - SCRIPTSLIBRARIES -->
