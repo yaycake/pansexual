@@ -5,7 +5,9 @@ body {
   font-family: Helvetica;
   background: linear-gradient(to bottom, rgba(255,255,255,0.92) 16%,rgba(255,255,255,0.83) 59%,rgba(255,255,255,0.79) 80%,rgba(255,255,255,0.68) 100%), url('https://github.com/yaycake/pansexual/blob/master/Images/makingout.png?raw=true');
   background-attachment: fixed;
-
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
@@ -60,13 +62,17 @@ ul>li{
   /*clear: all;*/
 }
 
-li>a{
+span>a, .navbar-left{
   text-decoration: none;
   color: black;
   font-size: 1rem;
   letter-spacing: .25rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.top-links{
+  padding: 1rem;
 }
 
 .icons-nav{
@@ -77,29 +83,30 @@ li>a{
 .logo {
   width: 3rem;
   height: auto;
+  /*padding: 2rem;*/
+  margin: 1rem 2rem;
 }
 
 .navbar-left, .navbar-right {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
-/*.navbar-right{
-  float: none !important;
-}*/
+.navbar-right{
+  margin-right: 2rem!important;
+}
 
 /*- - - - - - - - - - BANNER*/
 .banner {
   height: 100vh;
   width: 100vw;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding: 4rem;
 }
 
 .banner>h1{
@@ -109,7 +116,8 @@ li>a{
 /*- - - - - - - - - - - SECTIONS*/
 
 .section {
-  height: 60vh;
+  /*height: 60vh;*/
+  margin: 5rem;
   padding: 50px 0px;
   /*width: 100%;*/
   display: flex;
@@ -133,8 +141,8 @@ li>a{
 .section-pic {
   min-height: 32rem;
   min-width: 32rem;
-  max-height: 45rem;
-  max-width: 45rem;
+  max-height: 40rem;
+  max-width: 40rem;
   background-position: center;
   background-size: cover;
   border-radius: 3px;
@@ -167,15 +175,11 @@ li>a{
 
 .footer {
   background-color: black;
-  height: 7rem;
-  width: 100vw;
+  height: 3rem;
+  width: 100%
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
+  /*text-align: center;*/
   font-size: .75rem;
-  margin-top: 4rem;
 }
 
 /*- - - - - - - - - - - - - - CARDS REFER TO TEXT + BUTTON BOXES*/
@@ -251,7 +255,7 @@ li>a{
   /*background-color: rgba(222,255,147,1);*/
   background-color:black;
   color: white;
-  width: 100px;
+  width: 200px;
   height: 40px;
   width: 200px;
   border-radius: 2px;
