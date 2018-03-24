@@ -312,7 +312,11 @@ span>a, .navbar-left{
   justify-content: space-between;
 }
 
-
+.download-wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
 /*- -- - - - - - - - - - ICONS*/
 .icons {
